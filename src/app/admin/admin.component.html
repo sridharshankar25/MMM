@@ -1,0 +1,18 @@
+<div class="container" style="margin: 250px;">
+    <div class="row" style="text-align: center;">
+        <h1 style="margin-left: 400px;">Welcome Admin !!</h1><br><br>
+        </div><br><br>
+        <form style="margin-left: 200px; margin-right: 200px;"  #authForm="ngForm" (ngSubmit)="onClick(authForm)">
+
+            <!-- <form #authForm="ngForm" (ngSubmit)="onClick(authForm)">  -->
+                
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Enter the password</label>
+                  <input type="password" class="form-control" ngModel name="cname" required minlength="6" />
+                </div>
+                <button class="btn-primary " style="margin-left: 300px;"  type="submit">Confirm identity</button>
+                
+                
+        </form>
+    
+</div>

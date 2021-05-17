@@ -1,0 +1,78 @@
+@media only screen and (max-width: 600px) {
+    .name{
+      width:200px; 
+      height:60px;  
+    }
+    .logo{
+        width:60px;
+        height:60px;
+    }
+    img{
+        width:100px;
+    }
+    .s1{
+        width:220px;
+        height:250px;    
+    }
+    .s2{
+        margin-left: 50px;
+        width:220px;
+        height:250px;
+    }
+    img{
+        width: 150px;
+    }
+    .cal{
+        width:250px; 
+        height:130px;
+    }
+    .photo{
+        width: 100%;
+        height: 200px;
+        margin-top: 0px;
+    }
+    .product-grid6 .product-image6 img{width:150px;height:150px; transition:all .5s ease 0s}
+  }
+
+.product-grid6,.product-grid6 .product-image6{overflow:hidden}
+.product-grid6{font-family:'Open Sans',sans-serif;text-align:center;position:relative;transition:all .5s ease 0s}
+.product-grid6:hover{box-shadow:0 0 10px rgba(0,0,0,.3)}
+.product-grid6 .product-image6 a{display:block}
+.product-grid6 .product-image6 img{width:200px;height:200px; transition:all .5s ease 0s}
+.product-grid6:hover .product-image6 img{transform:scale(1.1)}
+.product-grid6 .product-content{padding:12px 12px 15px;transition:all .5s ease 0s}
+.product-grid6:hover .product-content{opacity:0}
+.product-grid6 .title{font-size:20px;font-weight:600;text-transform:capitalize;margin:0 0 10px;transition:all .3s ease 0s}
+.product-grid6 .title a{color:#000}
+.product-grid6 .title a:hover{color:#2e86de}
+.product-grid6 .price{font-size:18px;font-weight:600;color:#2e86de}
+.product-grid6 .price span{color:#999;font-size:15px;font-weight:400;text-decoration:line-through;margin-left:7px;display:inline-block}
+.product-grid6 .social{background-color:black;width:75%;padding:0;margin:0;list-style:none;opacity:0;transform:translateX(-50%);position:absolute;bottom:-50%;left:50%;z-index:1;transition:all .5s ease 0s}
+.product-grid6:hover .social{opacity:1;bottom:20px}
+.product-grid6 button { height: 30px; width: 75px; background-color:black; color:white; margin: 10px;
+}
+.product-grid6 button:hover{background-color:grey;}
+@media only screen and (max-width:600px){
+    
+.product-grid6
+{
+    margin-bottom:25px
+}
+
+
+
+
+}
+.carousel-inner img {
+    margin-top: 50px;
+    width: 100%;
+    height: 450px;
+  }
+
+h1,h2,h3,h4,h5,h6,p
+{
+    font-family:'Open Sans',sans-serif;
+}
+
+
+

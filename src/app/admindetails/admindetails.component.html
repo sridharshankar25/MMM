@@ -1,0 +1,30 @@
+
+
+<div style=" margin-top: 150px;">
+
+</div>
+
+<div *ngIf = " loadedPosts.length == 0"> <h1 style="text-align: center; margin-bottom: 370px;"><b>No Orders Placed.</b> </h1></div>
+<div *ngFor="let item of loadedPosts" class="container border" style="margin-bottom: 15px ;">
+    <div class="row" style="height: 280px; border-inline: 20px; background-color: lightskyblue;">
+        
+        <div class="col-md-10">
+            <br>
+            <h4><b>Order ID :</b> {{ item.id}}</h4>
+            <h5><b>Name :</b> {{item.name}}</h5>
+            <h6><b>Shop Name :</b> {{ item.shopname}}</h6>
+            <h6><b>Phone No :</b> {{ item.phoneno}}</h6>
+            <h6><b>Address : </b> {{item.address}}</h6>
+            <h6><b>Ordered Goods ID:</b> {{item.orders}}</h6>
+            <hr>
+            <h6><b>Note : </b><br><br> {{item.order}}</h6>
+
+        </div>
+    </div>
+    
+</div>
+<div style="margin-bottom: 250px;">
+
+</div>
+
+

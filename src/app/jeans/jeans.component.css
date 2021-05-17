@@ -1,0 +1,50 @@
+.pad{
+  margin-top: 51px;
+}
+.center{
+  margin-left:300px;
+}
+.center1{
+  margin-left:200px;
+}
+.color{
+  background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%);
+  opacity: 0.9;
+  border-radius: 10px;
+}
+img{
+  width: 200px;;
+  height:150px;
+}
+
+.c1{
+  margin-left:400px;
+}
+.c2{
+  margin: 10px; 
+}
+.space{
+  margin-top: 450px;
+}
+.swap{
+  transition: transform 0.5s ;
+}
+.swap:hover{
+
+  /* transform: translateY(-10px); */
+  transform: scale(1.1);
+  box-shadow: 2px 2px 2px grey;
+
+}
+
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+
+
+@media only screen and (max-width: 600px) {
+  img{
+    width: 150px;;
+    height:100px;
+  }
+
+}

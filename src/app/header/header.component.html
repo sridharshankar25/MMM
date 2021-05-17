@@ -1,0 +1,52 @@
+<!--new header-->
+
+
+<div class="wrapper w3-top w3-hide-small">
+  
+  <header>
+   
+    
+    <nav>
+        <div class="logo">
+          <img routerLink='/' src="/assets/img/MMM_-_Logo-removebg-preview.png"  width="50" height="50">
+          <img routerLink='/' src="/assets/img/MMM_Name-removebg-preview.png" class="name" width="180" height="60">
+        </div>
+        <div class="menu">
+           <ul>
+              <li><a routerLink='/'>Home</a></li>
+              <li><a routerLink='/traditional'>Traditional</a></li>
+              <!-- <li><a routerLink='/formals'>Uniforms</a></li> -->
+              <li><a routerLink='/casuals'>Shirts</a></li>
+              <li><a routerLink='/jeans'>Jeans & Cotton pants</a></li>
+              <li><a routerLink='/about'>About us</a></li>
+              <li *ngIf = "isAuthenticated"><a routerLink='/cart'>cart</a></li>
+              <li *ngIf = "isAuthenticated"><a routerLink='/admin'>Admin</a></li>
+              <li  *ngIf = "!isAuthenticated"><button class="btn  btn-primary" routerLink='/auth' >Login !</button></li>
+              <li *ngIf = "isAuthenticated"><button class="btn  btn-primary" (click)="onLogout()">Logout !</button></li>
+
+           </ul>
+        </div>
+     </nav>
+  </header>
+  
+  </div>
+
+<div class="w3-top "style="font-family: Helvetica Neue , sans-serif; font-weight: lighter; background-color:white;">
+  <div class=" w3-hide-large w3-hide-medium" >
+    <img routerLink='/' src="/assets/img/MMM_-_Logo-removebg-preview.png" class="w3-center" width="40" height="40" style="margin: 10px;">
+    <input type="checkbox" id="hamburger-toggle"> 
+    <label class="hamburger-wrapper" for="hamburger-toggle">
+      <span class="hamburger"></span>
+     </label>
+     <nav class="navbar">
+	    <ul class="nav-list" >
+		    <li ><a routerLink='/'> home </a></li>
+        <li><a routerLink='/traditional' >Traditional</a></li>
+        <li><a routerLink='/formals'>Uniforms</a></li>
+        <li><a routerLink='/casuals'>Shirts</a></li>
+        <li><a routerLink='/jeans'>Jeans & Cotton pants</a></li>
+        <li><a routerLink='/about'>About us</a></li>
+	    </ul>
+      </nav>
+     </div>
+  </div>

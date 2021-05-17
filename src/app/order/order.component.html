@@ -1,0 +1,31 @@
+<form style="margin: 200px;">
+    
+    <form #authForm="ngForm" (ngSubmit)="OnSubmit(authForm)"> 
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Customer Name</label>
+          <input type="text" class="form-control" ngModel name="cname" required minlength="6" />
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Shop Name</label>
+            <input type="text" class="form-control" id="exampleFormControlInput2" ngModel name="sname" required minlength="6"/>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Phone No</label>
+            <input type="number" class="form-control" id="exampleFormControlInput3" ngModel name="phoneno"  required minlength="10"/>
+          </div>
+        
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Delivery Address</label>
+          <textarea class="form-control" id="exampleFormControlTextarea4" rows="3" required minlength="15" ngModel name="address"></textarea>
+        </div>
+      
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Order Related Text.</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" ngModel name="order"></textarea>
+    </div>
+    <button class="btn btn-primary " style="margin-left: 250px;" routerLink='/cart'>Order Summary</button>
+    <button class="btn btn-primary " style="margin-left: 300px;"  type="submit">Confirm order</button>
+  </form>
+
+ 
