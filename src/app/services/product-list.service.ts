@@ -10,11 +10,10 @@ import { map } from 'jquery';
 export class ProductListService {
   p=[];
   main=[];
-  mymap:Map<string,object>
-  private subject = new Subject<any>();
-  // mymap1:Map<string,object>;
-  // id :any;
   
+  mymap:Map<string,object>
+  // product= string[];
+  private subject = new Subject<any>();
   
   constructor() {
    }
@@ -22,18 +21,12 @@ export class ProductListService {
   
   addItem(id:string){
 
-    // this.mymap =new Map();
-
-    //verify the map in the mymap
-    // this.mymap1=new Map();
     console.log("id-"+id);
     this.p.push(id);
     
     
     console.log("pushed");
-    
-
-    // this.subject.next({ data: this.mymap });
+  
   }
 
   getservices(product:string){
